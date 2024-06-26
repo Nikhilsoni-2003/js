@@ -1,7 +1,7 @@
 //Dates...
 let myDate = new Date()
 console.log(myDate);
-console.log(myDate.toString());
+console.log(myDate.toString());                  // Wed Jun 26 2024 14:30:00 GMT+0000 (Coordinated Universal Time)
 console.log(myDate.toDateString());              // Sun Dec 31 2023
 console.log(myDate.toISOString());
 console.log(myDate.toJSON());
@@ -9,12 +9,14 @@ console.log(myDate.toLocaleString());           // 31/12/2023, 3:27:29 am
 console.log(myDate.toLocaleTimeString());
 console.log(myDate.toLocaleDateString());
 
+console.log(typeof myDate);                     // object.
+
 let myCreatedDate = new Date(2023, 11, 31)                    //Sun Dec 31 2023         (js me months 0 se start hote hain)
 console.log(myCreatedDate.toDateString());
 console.log(myCreatedDate.toLocaleString());                  // 31/12/2023, 12:00:00 am
 
 let newDate = new Date(2023, 11, 31, 3, 32)                       // 3 and 32 represent time 3:32
-console.log(newDate.toLocaleString());
+console.log(newDate.toLocaleString());                            // 12/31/2023, 3:32:00 AM
 
 let date2  = new Date("2023-12-31");     // yyyy-mm-dd
 console.log(date2.toLocaleString());
@@ -36,6 +38,7 @@ console.log(date4.getDay());
 console.log(date4.getFullYear());
 console.log(date4.getMonth() + 1);       // coz dec is 11th month
 
+
 // to customise locale string object.
 
 console.log(
@@ -44,7 +47,7 @@ console.log(
     // day: "2-digit",                                       // ctrl + shift for suggetions. (^_^)
     // dateStyle: "long",
     hourCycle: "h24",
-    timeStyle: "full"
+    timeStyle: "full",
 })
 );
 
