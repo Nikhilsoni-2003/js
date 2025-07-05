@@ -40,3 +40,6 @@ const b = ++a;
 console.log(`a:${a}, b:${b}`); 
 console.log("a:",a, "b:",b);
 
+let z = Number(true);
+
+console.log(++z);  // 2

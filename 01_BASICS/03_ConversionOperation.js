@@ -32,6 +32,7 @@ console.log(temprature);  // returns 0 i.e. converts null to 0 .
 
 // "33" => 33
 // "123abc" => NaN
+//null => 0
 // true => 1 and false => 0
 
 let isLoggedIn = 1
@@ -53,3 +54,5 @@ let num1 = 619;
 let stringNum1 = String(num1)
 console.log(stringNum1);          // returns string 619
 console.log(typeof stringNum1);   // returns string
+
+console.log(typeof NaN);          // number

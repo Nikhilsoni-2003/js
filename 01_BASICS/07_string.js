@@ -40,3 +40,10 @@ console.log(url.includes('nikhil'));                    // o/p => true
 // string to array.
 console.log(url.split('/'));                            // o/p => [ 'https:', '', 'nikhil.com', 'nikhil%20soni' ]
 
+url.match(/* regex */)
+
+const myName = new String('Nikhil')
+
+console.log(myName.indexOf('i'));    // 1st index where i is encountered. i.e. 1 
+
+

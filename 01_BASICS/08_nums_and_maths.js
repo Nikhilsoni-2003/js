@@ -13,10 +13,13 @@ console.log(rate.toPrecision(4));          // o/p => 97.99
 const hundreds = 1000000
 console.log(hundreds.toLocaleString('en-US'));                // o/p => 1,000,000
 console.log(hundreds.toLocaleString('en-in'));                // o/p => 10,00,000
+console.log(hundreds.toLocaleString());                // o/p => 10,00,000
 console.log(hundreds);
 
 // const MAX_VALUE = Number.MAX_VALUE;
 console.log(Number.MAX_VALUE);
+console.log(Number.MAX_SAFE_INTEGER);
+
 
 
 // ============================== Maths ===============================

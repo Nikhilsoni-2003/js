@@ -56,6 +56,12 @@ function calculateCartPrice( ... num1){           // ... = rest and spread opera
 
 console.log(calculateCartPrice(200,3834,234,325,235,36,456,233,634,634,74,23));       // returns array => [200,3834,234,325,235,36,456,233,634,634,74,23]
 
+function sum1(val1, val2, ...nums){
+  return nums;
+}
+
+console.log(sum1(10,20,30,40,50));    // [30,40,50] 10,20 goes to val1 and val2 and rest goes to nums array.
+
 const book ={
   bookname : "Song of ice and fire",
   price : 1299

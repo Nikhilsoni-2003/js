@@ -18,7 +18,9 @@ console.log(id == anotherId);           // false
 // How to use big int => add n at last
 
 const bigInt = 989898989899999488858495495995n
+console.log(typeof bigNumber);          //  bigint.
 
+// ********************************************************************************
 
 //// non primitive
 

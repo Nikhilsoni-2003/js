@@ -74,6 +74,8 @@ const course = {
     courseInstructor: "Nikhil"
 }
 
+//object destructuring...
+
 const {courseInstructor : instructor} = course
 const {price} = course
 console.log(price);             //9999
