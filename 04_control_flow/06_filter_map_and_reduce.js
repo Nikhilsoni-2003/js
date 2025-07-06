@@ -7,7 +7,22 @@ const values = codingLanguages.forEach((item)=>{
 
 console.log(values);    // undefined (mtlb for each loop kuch retun nhi krta hai)
 
+// forEach is used to iterate over an array and perform an action on each element, but it does not return a new array or any value.
+// It simply executes the provided function once for each array element.
+// If you want to create a new array based on some condition or transformation, you should use `map`, `filter`, or `reduce` methods instead.
+// Example of forEach:
+// codingLanguages.forEach((item)=>{
+//     console.log(item);
+// })
 
+// Example of map:
+// The `map` method creates a new array populated with the results of calling a provided function on every element in the calling array.
+// It is used when you want to transform each element of an array and create a new array
+// const newCodingLanguages = codingLanguages.map((item)=>{
+//     return item.toUpperCase();
+// })
+
+// console.log(newCodingLanguages);
 
 const nums = [1,2,3,4,5,6,7,8,9,10]
 
@@ -16,6 +31,7 @@ const nums = [1,2,3,4,5,6,7,8,9,10]
 // })
 // console.log(newNums);  // this gives undefined , kyuki kuch return hi nhi ho rha hai... it is same as return undefined and filter sirf truthy values ko store krta hai
 
+// so we need to return the value explicitly in the filter function.
 
 // const newNums = nums.filter((val)=> {
 //     return val>5
